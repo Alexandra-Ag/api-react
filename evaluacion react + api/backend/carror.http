@@ -1,0 +1,28 @@
+POST http://localhost:4000/api/carro HTTP/1.1
+Content-Type: application/json
+
+{
+   "Placa":1010,
+    "Marca":"chevrolet",
+    "color":"azul"
+}
+
+###
+GET http://localhost:4000/api/carro  HTTP/1.1
+
+###
+GET http://localhost:4000/api/carro/655d5af242128f1e730b8d5a HTTP/1.1
+
+###
+PUT http://localhost:4000/api/carro/655d5af242128f1e730b8d5a HTTP/1.1
+content-Type: application/json
+
+
+{
+   "Placa":1012,
+    "Marca":"chevrolet",
+    "color":"azul"
+}
+
+###
+DELETE http://localhost:4000/api/carro/655d5af242128f1e730b8d5a HTTP/1.1
